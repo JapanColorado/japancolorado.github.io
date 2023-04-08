@@ -2,15 +2,15 @@
 
 ![A cute cat](images/cat.jpg)
 ***BOOM!** Cat pic!*
-### Who I am
+## Who I am
 
 Hi! I'm Russell, also known as _JapanColorado_. I am an aspiring AI researcher, machine learning engineer, front end developer, and roboticist. I enjoy creating cool things, cuddling with my cat, and learning something new everyday!
 
-### My background
+## My background
 
 I've _always_ been interested in coding. Since the first time I learned block coding, to the first-ever Arduino kit I received from an aunt I still don't know the name or face of, I was enthralled with programming. I taught myself python from a young age, and built stuff with a Raspberry Pi since I was in elementary school.
 
-#### The issue:
+### The issue:
 
 However, despite this abundance of _"passion"_, I've never been able to consistently make interesting things. I would say that I wanted to do and make awe-inspiring things, and then never put in the time and effort. I would take up a project with a Raspberry Pi, get frustrated trying to format the SD card, and give up.
 
@@ -22,7 +22,7 @@ Later that year, my dad asked me to finish the project as his birthday gift. How
 
 I now see how foolish I was to abandon the project in the first place, and to re-abandon it when I tried again months later. I don't want my projects to be half-completed, uninteresting failures. I need something to keep me consistent and accountable. I need proof that my future _won't_ be like my past.
 
-### And so, a blog was born
+## And so, a blog was born
 
 Yes, the one you're currently reading. I will be consistently writing about the new things I'm learning, the fun projects I'm working on, and the inevitable struggles that will come up so that you don't have to repeat my mistakes. I want to
 
