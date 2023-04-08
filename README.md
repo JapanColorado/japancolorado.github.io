@@ -3,7 +3,7 @@
 ### Who I am
 
 <figure>
-  <img src="cat.jpg" alt="Cute" style="width:100%">
+  <img src="images/cat.jpg" alt="Cute" style="width:100%">
   <figcaption><em>BOOM!</em> Cute cat pic!</figcaption>
 </figure>
 
