@@ -1,11 +1,7 @@
 # JapanColorado
-<div class="figure">
-<figure>
-  <img src="images/cat.jpg" alt="Cute" style="width:50%">
-  <figcaption><em>BOOM!</em> Cute cat pic!</figcaption>
-</figure>
-</div>
 
+![A cute cat]("images/cat.jpg")
+***BOOM!** Cat pic!*
 ### Who I am
 
 Hi! I'm Russell, also known as _JapanColorado_. I am an aspiring AI researcher, machine learning engineer, front end developer, and roboticist. I enjoy creating cool things, cuddling with my cat, and learning something new everyday!
