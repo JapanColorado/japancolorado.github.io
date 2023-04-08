@@ -1,6 +1,6 @@
 # JapanColorado
 
-![A cute cat]("images/cat.jpg")
+![A cute cat](images/cat.jpg)
 ***BOOM!** Cat pic!*
 ### Who I am
 
