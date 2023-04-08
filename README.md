@@ -1,8 +1,10 @@
 # JapanColorado
+<div class="figure">
 <figure>
   <img src="images/cat.jpg" alt="Cute" style="width:50%">
   <figcaption><em>BOOM!</em> Cute cat pic!</figcaption>
 </figure>
+</div>
 
 ### Who I am
 
