@@ -20,7 +20,6 @@ div.caption_start + p {
 
 html {
   font-size: 100%;
-  
 }
 
 body {
@@ -290,12 +289,9 @@ nav {
   }
 }
 
-.wrapper-footer{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height:100px;
+.wrapper-footer {
+  position: static;
+  height: 100px;
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
