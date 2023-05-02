@@ -23,9 +23,9 @@ html {
 }
 
 body {
-  background: $white;
+  background: black;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: lightgrey;
 }
 
 .container {
@@ -42,7 +42,7 @@ h4,
 h5,
 h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: rgb(240, 240, 240);
   font-weight: bold;
 
   line-height: 1.7;
@@ -141,11 +141,11 @@ img {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: lightblue;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: lightblue;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -177,7 +177,8 @@ img {
   justify-content: space-between;
   padding-top: 15px;
   border-bottom: 1px solid $gray;
-  background-color: $lightGray;
+  background-color: #292929;
+  color: #36F5C2;
 }
 
 .site-avatar {
@@ -220,12 +221,12 @@ header > nav {
 }
 
 .nav a {
-  color: $darkerGray;
-
+  color: #FA193E;
+  //background-color: #36F5C2;
 }
 
 .nav a:hover{
-  filter: invert(50%);
+  color: rgb(201, 201, 201);
 }
 .nav a:active{
   filter: invert(70%);
@@ -235,7 +236,7 @@ header > nav {
   h1, p{
     margin: 0px;
     font-weight: normal;
-    color: $darkGray;
+    color: #117FAD;
   }
 }
 
@@ -276,9 +277,8 @@ header > nav {
 .wrapper-footer {
   height: 100px;
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid #dddddd9c;
+  background-color: #292929;
 }
 footer {
   padding: 20px 0;
