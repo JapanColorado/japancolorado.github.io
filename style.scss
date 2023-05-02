@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  background: black;
+  background: #181818;
   font: 18px/1.4 $helvetica;
   color: lightgrey;
 }
@@ -173,11 +173,11 @@ img {
 
 .site-header{
   display:flex;
-  padding: 0px 30px;
+  padding: 0px 50px;
   justify-content: space-between;
   padding-top: 15px;
   border-bottom: 1px solid $gray;
-  background-color: #292929;
+  background-color: #111111;
   color: #36F5C2;
 }
 
@@ -204,7 +204,7 @@ header > nav {
   margin-right: 10px;
   margin-top: -10px;
   align-items: center;
-  max-width: 600px;
+  max-width: 650px;
   flex-wrap: wrap;
   width: 100%;
   list-style: none;
@@ -216,7 +216,7 @@ header > nav {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   list-style: none;
 }
 
@@ -278,7 +278,7 @@ header > nav {
   height: 100px;
   margin-top: 50px;
   border-top: 1px solid #dddddd9c;
-  background-color: #292929;
+  background-color: #111111;
 }
 footer {
   padding: 20px 0;
