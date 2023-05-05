@@ -25,7 +25,7 @@ I now see how foolish I was to abandon the project in the first place, and to re
 
 ## And so, a blog was born
 
-Yes, the one you're currently reading. I will be consistently writing about the new things I'm learning, the fun projects I'm working on, and the inevitable struggles that will come up so that you don't have to repeat my mistakes. I want to
+Yes, the one you're currently reading. I will be consistently writing about the new things I'm learning, the fun projects I'm working on, and the inevitable struggles that will come up so that you don't have to repeat my mistakes.
 
 In addition, I will be streaming my coding sessions every other day on my [YouTube channel](https://www.youtube.com/@japancolorado), and I would appreciate any feedback! I would like to become a better developer while helping others who may feel as lost as I'm feeling now. I want them to know it's going to take a lot of _sucking_ before finally getting better. And I want to go through all the sucking so that I **_finally_** get better.
 
