@@ -12,21 +12,22 @@
 /**************/
 /* BASE RULES */
 /**************/
+
+// Auto scaling line height
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
 html {
   font-size: 100%;
 }
 
 body {
-  background: #181818;
-  font: 18px/1.4 $helvetica;
+  background: $backgroundBlack;
+  font: 1em $helvetica;
+  font-size: 20px;
   color: lightgrey;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
 }
 
 h1,
@@ -61,11 +62,6 @@ h2 {
 
 h3 {
   font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
 }
 
 p {
@@ -118,8 +114,14 @@ b {
   font-weight: bold;
 }
 
-img {
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
   max-width: 100%;
+  user-select: none;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -142,16 +144,23 @@ img {
   background: lightblue;
 }
 
-
 // Used for captioning
 img ~ em{
   display: block;
   margin: 0 auto;
   text-align: center;
 }
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
 .site-title{
   padding-left: 15px;
   padding-bottom: 10px;
@@ -166,8 +175,7 @@ img ~ em{
   justify-content: space-between;
   padding-top: 15px;
   border-bottom: 1px solid $gray;
-  background-color: #111111;
-  color: #36F5C2;
+  background-color: $headerBlack;
 }
 
 .site-avatar {
@@ -210,8 +218,7 @@ header > nav {
 }
 
 .nav a {
-  color: #FA193E;
-  //background-color: #36F5C2;
+  color: $accentRed;
 }
 
 .nav a:hover{
@@ -266,8 +273,8 @@ header > nav {
 .wrapper-footer {
   height: 100px;
   margin-top: 50px;
-  border-top: 1px solid #dddddd9c;
-  background-color: #111111;
+  border-top: 1px solid $gray;
+  background-color: $headerBlack;
 }
 footer {
   padding: 20px 0;
