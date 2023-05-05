@@ -12,12 +12,6 @@
 /**************/
 /* BASE RULES */
 /**************/
-
-// Used for captioning
-div.caption_start + p {
-  text-align: center;
-}
-
 html {
   font-size: 100%;
 }
@@ -148,18 +142,13 @@ img {
   background: lightblue;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
 
-.clearfix:after {
-  clear: both;
+// Used for captioning
+img ~ em{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
-
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
