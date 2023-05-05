@@ -9,7 +9,7 @@ Hi! I'm Russell, also known as _JapanColorado_. I am an aspiring AI researcher, 
 
 ## My background
 
-I've _always_ been interested in coding. Since the first time I learned block coding, to the first-ever Arduino kit I received from an aunt I still don't know the name or face of, I was enthralled with programming. I taught myself python from a young age, and built stuff with a Raspberry Pi since I was in elementary school.
+I've _always_ been interested in coding. Since the first time I learned block coding, to the first-ever Arduino kit I received from an aunt, I have become more and more enthralled with programming. I taught myself python from a young age, and built stuff with a Raspberry Pi since elementary school.
 
 ### The issue:
 
