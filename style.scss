@@ -19,6 +19,7 @@
   line-height: calc(1em + 0.5rem);
 }
 
+
 html {
   font-size: 100%;
 }
@@ -163,10 +164,51 @@ img ~ em{
 /* LAYOUT / UTILITY CLASSES / SECTIONS */
 /***************************************/
 .container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   width: 100%;
+  border: 1px solid red;
+}
+
+
+// xs
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+// sm
+@media (min-width:640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+// m
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+// l
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+// xl
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+// xxl
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
 
 .btn{
@@ -187,6 +229,19 @@ img ~ em{
 .btn:active{
   color: rgb(201, 201, 201);
 }
+
+.header-wrapper{
+  border-bottom: 1px solid $gray;
+  background-color: $headerBlack;
+}
+
+.site-header{
+  display: flex;
+  //padding: 0px 50px;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
 .site-title{
   padding-left: 15px;
   padding-bottom: 10px;
@@ -195,30 +250,27 @@ img ~ em{
   align-items: center;
 }
 
-.site-header{
-  display:flex;
-  padding: 0px 50px;
-  justify-content: space-between;
-  padding-top: 15px;
-  border-bottom: 1px solid $gray;
-  background-color: $headerBlack;
-}
-
 .site-avatar {
   float: left;
   width: 75px;
   height: 75px;
   margin-right: 15px;
   border-radius: 5px;
-
+  //add reactive sizing for smaller screens
+/*
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
   }
+*/
+}
 
-  img {
-    border-radius: 5px;
+.site-info {
+  h1, p{
+    margin: 0px;
+    font-weight: normal;
+    color: #117FAD;
   }
 }
 
@@ -241,6 +293,7 @@ header > nav {
   width: 100%;
   max-width: 650px;
   list-style: none;
+  
   //RSS icon
   img{
     filter: invert(95%);
@@ -258,13 +311,7 @@ header > nav {
   filter: invert(70%);
 }
 
-.site-info {
-  h1, p{
-    margin: 0px;
-    font-weight: normal;
-    color: #117FAD;
-  }
-}
+
 
 //
 // .main
@@ -310,6 +357,8 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

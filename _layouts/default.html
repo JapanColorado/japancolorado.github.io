@@ -16,26 +16,29 @@
   </head>
 
   <body>
-    <header class="site-header">
-      <a href="{{ site.baseurl }}/" class="site-title">
-        <img src="../images/favicon.png" class="site-avatar">
-        <div class="site-info">
-          <h1>JapanColorado | Russell</h1>
-          <p>Experiments and Questions</p>
-        </div>
-      </a>
-      <nav>
-        <ul class="nav">
-          <li><a href="{{ site.baseurl }}/">Home</a></li>
-          <li><a href="{{ site.baseurl }}">Project Catalog</a></li>
-          <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-          <li><a href="{{ site.baseurl }}">Stay Updated</a></li>
-          <li><a href="{{ site.baseurl }}">Contact</a></li>
-          <li><a href="{{ site.baseurl }}/feed.xml"><img src="../images/rss.svg" alt="RSS Feed"></a></li>
-        </ul>
-      </nav>
-    </header>
-
+    <div class="header-wrapper">
+      <div class="container">
+        <header class="site-header">
+          <a href="{{ site.baseurl }}/" class="site-title">
+            <img src="../images/favicon.png" class="site-avatar">
+            <div class="site-info">
+              <h1>JapanColorado | Russell</h1>
+              <p>Experiments and Questions</p>
+            </div>
+          </a>
+          <nav>
+            <ul class="nav">
+              <li><a href="{{ site.baseurl }}/">Home</a></li>
+              <li><a href="{{ site.baseurl }}">Project Catalog</a></li>
+              <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+              <li><a href="{{ site.baseurl }}">Stay Updated</a></li>
+              <li><a href="{{ site.baseurl }}">Contact</a></li>
+              <li><a href="{{ site.baseurl }}/feed.xml"><img src="../images/rss.svg" alt="RSS Feed"></a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
