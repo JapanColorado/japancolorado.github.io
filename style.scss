@@ -1,164 +1,9 @@
 ---
 ---
-
-//
-// IMPORTS
-//
-
 @import "reset";
 @import "variables";
+@import "base-rules";
 // Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
-
-// Auto scaling line height
-* {
-  margin: 0;
-  line-height: calc(1em + 0.5rem);
-}
-
-
-html {
-  font-size: 100%;
-}
-
-body {
-  background: $backgroundBlack;
-  font: 1em $helvetica;
-  font-size: 20px;
-  color: lightgrey;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $helveticaNeue;
-  color: rgb(240, 240, 240);
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-p {
-  margin: 15px 0;
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover,
-  &:active {
-    color: $blue;
-  }
-}
-
-ul,
-ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul,
-ul ol,
-ul ul,
-ol ol {
-  margin: 0;
-}
-
-ul ul,
-ol ul {
-  list-style-type: circle;
-}
-
-em,
-i {
-  font-style: italic;
-}
-
-strong,
-b {
-  font-weight: bold;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-  user-select: none;
-}
-
-// Reset button sizes
-button {
-  display:inline-block;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-}
-
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
-
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: lightblue;
-}
-::selection {
-  color: $black;
-  background: lightblue;
-}
-
-// Used for captioning
-img ~ em{
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
 
 /***************************************/
 /* LAYOUT / UTILITY CLASSES / SECTIONS */
@@ -170,6 +15,13 @@ img ~ em{
   padding-left: 4rem;
   padding-right: 4rem;
   width: 100%;
+}
+
+// Used for captioning
+img ~ em{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 // xs
@@ -246,105 +98,7 @@ img ~ em{
   color: rgb(201, 201, 201);
 }
 
-.header-wrapper{
-  border-bottom: 1px solid $gray;
-  background-color: $headerBlack;
-}
-
-.site-header{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-}
-
-.site-title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  //padding-left: 15px;
-  padding-bottom: 10px;
-
-  font-size: 1.25rem;
-}
-
-.site-avatar {
-  float: left;
-  width: 75px;
-  height: 75px;
-  margin-right: 15px;
-  border-radius: 5px;
-  //add reactive sizing for smaller screens
-/*
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-*/
-}
-
-.site-info {
-  h1, p{
-    margin: 0px;
-    font-weight: normal;
-    color: #117FAD;
-  }
-}
-
-header > nav {
-  display: flex;
-  margin-right: 10px;
-  margin-top: -10px;
-  align-items: center;
-  max-width: 650px;
-  flex-wrap: wrap;
-  width: 100%;
-  list-style: none;
-}
-
-.nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 650px;
-  list-style: none;
-  
-  .rss{
-    filter: invert(100%);
-  }
-  .sun{
-    path{
-      width: 32px;
-      height: 32px;
-    }
-    width: 32px;
-    height: 32px;
-    color: white;
-    background-color: $headerBlack;
-    position:relative;
-    top: 2px;
-  }
-}
-
-.nav a {
-  color: $accentRed;
-}
-
-.nav a:hover{
-  color: rgb(201, 201, 201);
-}
-.nav a:active{
-  filter: invert(70%);
-}
-
-.divider {
-  border: 1px solid $mainBlue;
-  padding-top: 1.25em;
-}
-
+@import "header";
 //
 // .main
 //
