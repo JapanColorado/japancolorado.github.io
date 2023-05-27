@@ -1,35 +1,39 @@
+// Used for full width background
 .header-wrapper {
   border-bottom: 1px solid $gray;
   background-color: $headerBlack;
 }
 
+// site-header contains the site title and the navbar
 .site-header {
   display: flex;
   justify-content: space-between;
+
   padding-top: 15px;
 }
 
+// site-title
 .site-title {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  //padding-left: 15px;
   padding-bottom: 10px;
   font-size: 1.25rem;
 }
 
 .site-avatar {
   float: left;
+
   width: 75px;
   height: 75px;
-  margin-right: 15px;
   border-radius: 5px;
+
+  margin-right: 15px;
 }
 
-
 // Used for reactive sizing
-.site-info{
+.site-info {
   display: none;
 }
 .nav {
@@ -38,26 +42,24 @@
 .name {
   display: none;
 }
-
-.bars {
-  path {
-    width: 32px;
-    height: 32px;
-  }
-  width: 32px;
-  height: 32px;
-  color: white;
-  background-color: $headerBlack;
-  position: relative;
-  top: 23px;
-  display: flex;
-  align-items: center;
-  
-}
-#subtitle {
+#nav-subtitle {
   display: none;
 }
+
+// Navbar gets swapped out with expandable bar icon on small screens
+.bars {
+  position: relative;
+  top: 23px;
+
+  width: 32px;
+  height: 32px;
+
+  color: white;
+  background-color: $headerBlack;
+}
+
 @media (min-width: 475px) {
+  // Adds back site info
   .site-info {
     display: inline-block;
     h1,
@@ -70,7 +72,8 @@
 }
 
 @media (min-width: 640px) {
-  #subtitle {
+  // Adds back the subtitle
+  #nav-subtitle {
     display: inline-block;
   }
 }
@@ -78,48 +81,56 @@
 @media (min-width: 768px) {
 }
 
+// Adds navbar and removes bars
 @media (min-width: 1024px) {
+  // Nav element inside header
   header > nav {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: 550px;
+    width: 100%;
+
     margin-right: 10px;
     margin-top: -10px;
-    align-items: center;
-    max-width: 550px;
-    flex-wrap: wrap;
-    width: 100%;
+
     list-style: none;
   }
 
+  // Ul within the nav, contains links and buttons
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+
     max-width: 650px;
+    width: 100%;
+
     list-style: none;
 
+    // RSS and sun icons
     .rss {
       filter: invert(100%);
     }
     .sun {
-      path {
-        width: 32px;
-        height: 32px;
-      }
-      width: 32px;
-      height: 32px;
-      color: white;
-      background-color: $headerBlack;
       position: relative;
       top: 2px;
+
+      width: 32px;
+      height: 32px;
+
+      color: white;
+      background-color: $headerBlack;
     }
   }
 
+  // Color changes for active/hovered links
+  // TO-DO: Decide on colors/inversion %
   .nav a {
     color: $accentRed;
   }
-
   .nav a:hover {
     color: rgb(201, 201, 201);
   }
@@ -137,6 +148,7 @@
   }
 }
 
+// Add back name and increase the spacing of navbar elements
 @media (min-width: 1280px) {
   .name {
     display: inline;

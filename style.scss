@@ -1,13 +1,14 @@
 ---
 ---
+
 @import "reset";
 @import "variables";
 @import "base-rules";
 // Syntax highlighting @import is at the bottom of this file
 
-/***************************************/
-/* LAYOUT / UTILITY CLASSES / SECTIONS */
-/***************************************/
+/*******************/
+/* UTILITY CLASSES */
+/*******************/
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -17,87 +18,37 @@
   width: 100%;
 }
 
-// Used for captioning
-img ~ em{
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
-// xs
-@media (min-width: 475px) {
-  .container {
-    max-width: 475px;
-  }
-  .post{
-    padding: 0em 0em;
-  }
-}
-// sm
-@media (min-width:640px) {
-  .container {
-    max-width: 640px;
-  }
-  .post{
-    padding: 0rem 1rem;
-  }
-}
-// m
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-  .post{
-    padding: 0rem 2rem;
-  }
-}
-// l
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-  .post{
-    padding: 0rem 4rem;
-  }
-}
-// xl
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-  .post{
-    padding: 0rem 8rem;
-  }
-}
-// xxl
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-  .post{
-    padding: 0rem 16rem;
-  }
-}
-
-.btn{
+.btn {
   font-weight: 600;
   text-decoration: none;
   background-color: $mainBlue;
   color: $white;
   padding: 0.5rem 0.5rem;
   border-radius: 6px;
-  box-shadow: 0px 0px 8px rgba(17, 127, 173, 0.25), 0px -2px 8px rgba(17, 127, 173, 0.25), 0px 2px 8px rgba(17, 127, 173, 0.25);
+  box-shadow: 0px 0px 8px rgba(17, 127, 173, 0.25),
+    0px -2px 8px rgba(17, 127, 173, 0.25), 0px 2px 8px rgba(17, 127, 173, 0.25);
   transition: box-shadow 0.09s;
 }
 
-.btn:hover{
-  box-shadow: 0px 0px 8px rgba(250, 25, 62, 0.25), 0px -2px 8px	rgba(250, 25, 62, 0.25),0px 2px 8px rgba(250, 25, 62, 0.25);
+.btn:hover {
+  box-shadow: 0px 0px 8px rgba(250, 25, 62, 0.25),
+    0px -2px 8px rgba(250, 25, 62, 0.25), 0px 2px 8px rgba(250, 25, 62, 0.25);
 }
 
-.btn:active{
+.btn:active {
   color: rgb(201, 201, 201);
 }
 
+// Used for captioning
+img ~ em {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*************/
+/* Sections */
+/************/
 @import "header";
 //
 // .main
@@ -146,9 +97,56 @@ footer {
   text-align: center;
 }
 
+// Implements mobile-first design
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+  .post {
+    padding: 0em 0em;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+  .post {
+    padding: 0rem 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .post {
+    padding: 0rem 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .post {
+    padding: 0rem 4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  .post {
+    padding: 0rem 8rem;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+  .post {
+    padding: 0rem 16rem;
+  }
+}
 
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+// Bloating imports at bottom
 @import "highlights";
 @import "svg-icons";
