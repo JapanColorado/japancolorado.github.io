@@ -50,41 +50,10 @@ img ~ em {
 /* Sections */
 /************/
 @import "header";
+@import "posts";
 //
 // .main
 //
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.post {
-  //padding: 0rem 8rem;
-
-  blockquote {
-    margin: 1.8em 0.8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-}
 
 .wrapper-footer {
   height: 100px;
@@ -104,6 +73,7 @@ footer {
   }
   .post {
     padding: 0em 0em;
+    margin: 0em 0em;
   }
 }
 @media (min-width: 640px) {
@@ -111,7 +81,7 @@ footer {
     max-width: 640px;
   }
   .post {
-    padding: 0rem 1rem;
+    margin: 0rem 1rem;
   }
 }
 @media (min-width: 768px) {
@@ -119,7 +89,7 @@ footer {
     max-width: 768px;
   }
   .post {
-    padding: 0rem 2rem;
+    margin: 0rem 2rem;
   }
 }
 @media (min-width: 1024px) {
@@ -127,23 +97,25 @@ footer {
     max-width: 1024px;
   }
   .post {
-    padding: 0rem 4rem;
+    margin: 0rem 4rem;
   }
+
 }
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
   .post {
-    padding: 0rem 8rem;
+    margin: 0rem 8rem;
   }
+
 }
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
   }
   .post {
-    padding: 0rem 16rem;
+    margin: 0rem 16rem;
   }
 }
 
