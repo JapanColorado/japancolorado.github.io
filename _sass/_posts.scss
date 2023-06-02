@@ -45,6 +45,18 @@
     margin-bottom: 0px;
     margin-top: 10px;
   }
+  .entry {
+    img {
+      width: 475px;
+      border-radius: 15px;
+      padding-bottom: 4px;
+    }
+    p:has(img ~ em) {
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 0px;
+    }
+  }
 }
 
 // Adds border to separate each entry
@@ -72,7 +84,6 @@
   height: 200px;
 
   p > img {
-    
     top: -10px;
     max-width: 325px;
     padding: 10px;
@@ -80,10 +91,10 @@
     padding-bottom: 2px;
   }
 
-  p > img + em, p > img {
+  p > img + em,
+  p > img {
     position: relative;
     top: -15px;
-
     font-size: 16px;
   }
 
@@ -96,5 +107,5 @@
     padding-bottom: 0px;
   }
 }
-// TO-DO: Add media queries, figure out displaying of image for blog(float to right, add rounding, make it pretty
+// TO-DO: Add media queries, make image return to middle/disappear on smaller screens
 // TO-DO: Add comments to css code in _posts
