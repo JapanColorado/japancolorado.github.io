@@ -6,9 +6,7 @@
 @import "base-rules";
 // Syntax highlighting @import is at the bottom of this file
 
-/*******************/
-/* UTILITY CLASSES */
-/*******************/
+// Utility Classes //
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -46,14 +44,9 @@ img ~ em {
   text-align: center;
 }
 
-/*************/
-/* Sections */
-/************/
+// Sections //
 @import "header";
 @import "posts";
-//
-// .main
-//
 
 .wrapper-footer {
   height: 100px;

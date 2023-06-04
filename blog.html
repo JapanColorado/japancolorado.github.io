@@ -7,15 +7,17 @@ title: Blog
   {% for post in site.posts %}
   <article class="post">
     <div class="preview-container">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1>
+        <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
+      </h1>
       <h3 class="subtitle">{{ post.subtitle }}</h3>
-
+      
       <div class="excerpt">{{ post.excerpt }}</div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"
-      >Keep reading...</a
-    >
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
+        Keep reading...
+      </a>
     </div>
-    
   </article>
   {% endfor %}
 </div>

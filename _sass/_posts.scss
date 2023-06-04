@@ -1,15 +1,15 @@
-/*********************/
-/* Styling for Posts */
-/*********************/
-
+// Utility Classes and Styling for Posts //
 .date {
   font-style: italic;
   color: $gray;
 }
 
 .subtitle {
+  // Hide subtitle on small screens
   display: none;
   overflow: hidden;
+
+  width: 300px;
 
   font-size: 18px;
   font-style: italic;
@@ -17,8 +17,7 @@
 
   padding-top: 0px;
   padding-bottom: 5px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
 
   border-bottom: solid 1px $lightGray;
 }
@@ -54,6 +53,8 @@
   }
 }
 
+// Styling for Blog Page //
+
 // Adds border to separate each entry
 .posts > .post {
   padding-bottom: 2em;
@@ -66,7 +67,7 @@
   border-bottom: none;
 }
 
-// Adds padding without messing with separator
+// Adds padding to sides without messing with separator
 .preview-container {
   padding: 0px 10px;
 }
@@ -76,37 +77,36 @@
   justify-content: space-between;
   align-items: center;
 
+  // Auto-scaling height for small screens
   height: fit-content;
 
+  // Hide image for small screens
   p > img + em,
   p > img {
     display: none;
-
   }
 
   p:first-of-type {
-    //max-width: 500px;
     width: 100%;
-    //height: 100%;
+    padding-top: 15px;
     margin-top: 0px;
     margin-right: 5px;
-
-    padding-top: 15px;
-    //padding-bottom: 0px;
   }
 }
+
+// Mobile-first design //
 @media (min-width: 475px) {
   .post {
     padding: 0em 0em;
     margin: 0em 0em;
   }
-
 }
 @media (min-width: 640px) {
   .post {
     margin: 0rem 1rem;
   }
-  .subtitle{
+  // Add back subtitle
+  .subtitle {
     display: inline-block;
   }
 }
@@ -114,44 +114,42 @@
   .post {
     margin: 0rem 2rem;
   }
+  // Add back centered image to blog post
   .entry {
-    img ~ em, img{
+    img ~ em,
+    img {
       width: 100%;
       margin: 0 auto;
       text-align: center;
     }
   }
+  
   .excerpt {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
+    // Set fixed height for post excerpts
     height: 250px;
-  
+     
+    // Add back image to blog page
     p > img {
       max-width: 250px;
       padding: 5px;
       border-radius: 15px;
       padding-bottom: 2px;
     }
-  
+
     p > img + em,
-    p > img {
+    p > img { 
       display: block;
       position: relative;
       top: -15px;
       font-size: 16px;
     }
-  
+
+    // Makes space for image
     p:first-of-type {
       max-width: 500px;
       width: 100%;
       height: 100%;
-      margin-top: 0px;
       margin-right: 5px;
-  
-      padding-top: 15px;
-      //padding-bottom: 0px;
     }
   }
 }
@@ -160,41 +158,24 @@
     margin: 0rem 4rem;
   }
   .entry {
+    // Float blog image to the right on larger screens
     p:has(img ~ em) {
       float: right;
       margin-left: 20px;
       margin-bottom: 0px;
     }
   }
-  .subtitle{
-    width: 40%;
-  }
+  // Make image larger and excerpt height smaller
   .excerpt {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
     height: 200px;
-  
+
     p > img {
       max-width: 325px;
       padding: 10px;
-      border-radius: 15px;
-      padding-bottom: 2px;
+      border-radius: 20px;
     }
-  
-    p > img + em,
-    p > img {
-      position: relative;
-      top: -15px;
-      font-size: 16px;
-    }
-  
+
     p:first-of-type {
-      max-width: 500px;
-      width: 100%;
-      height: 100%;
-      margin-top: 0px;
       padding-top: 35px;
       padding-bottom: 0px;
     }
@@ -203,9 +184,6 @@
 @media (min-width: 1280px) {
   .post {
     margin: 0rem 8rem;
-  }
-  .subtitle{
-    width: 35%;
   }
 }
 @media (min-width: 1536px) {
