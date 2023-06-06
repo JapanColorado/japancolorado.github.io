@@ -1,0 +1,37 @@
+.wrapper-footer {
+  height: fit-content;
+  margin-top: 50px;
+  border-top: 1px solid $gray;
+  background-color: $headerBlack;
+}
+footer {
+  padding: 20px 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+.email-form {
+  display: flex;
+}
+
+// Hides label that is used for screen readers
+[for="email-address"] {
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border-width: 0;
+}
+#email-address{
+    margin: 0px 5px;
+    border-radius: 5px;
+}

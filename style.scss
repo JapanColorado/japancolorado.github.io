@@ -44,20 +44,12 @@ img ~ em {
   text-align: center;
 }
 
-// Sections //
+// Sections / Pages //
 @import "header";
+@import "footer";
 @import "posts";
 
-.wrapper-footer {
-  height: 100px;
-  margin-top: 50px;
-  border-top: 1px solid $gray;
-  background-color: $headerBlack;
-}
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
+
 
 // Implements mobile-first design
 @media (min-width: 475px) {

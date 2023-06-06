@@ -3,11 +3,9 @@ description: Avid learner and huge fan of questions
 avatar: https://avatars.githubusercontent.com/u/90987391?v=4
 
 footer-links:
-  email:  japancolorado@duck.com
   github: japancolorado/
   rss: YESPLEASE # just type anything here for a working RSS icon
   youtube: "@japancolorado"
-
 
 disqus: japancolorado
 
@@ -38,7 +36,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+    css_class: "highlight"
 
 # Set the Sass partials directory, as we're using @imports
 sass:
