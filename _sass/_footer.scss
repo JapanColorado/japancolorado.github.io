@@ -5,12 +5,11 @@
   background-color: $headerBlack;
 }
 footer {
-  padding: 20px 200px;
+  //padding: 20px 0px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  justify-items: center;
 }
 .icons {
   display: flex;
@@ -18,8 +17,27 @@ footer {
 }
 .email-form {
   display: flex;
+  justify-content: center;
 }
-
+.signup {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin: 10px 0px;
+  border: 2px solid $accentRed;
+  border-radius: 10px;
+  background-color: rgba(250, 25, 62, 0.1);
+  h3 {
+    margin: 0px;
+    border-bottom: 1px solid $mainBlue;
+  }
+  p {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    //color: $white;
+  }
+}
 // Hides label that is used for screen readers
 [for="email-address"] {
   overflow: hidden;
@@ -31,7 +49,69 @@ footer {
   padding: 0;
   border-width: 0;
 }
-#email-address{
-    margin: 0px 5px;
-    border-radius: 5px;
+#email-address {
+  margin-right: 10px;
+  border-radius: 5px;
 }
+.socials {
+  position: relative;
+  top: -10px;
+  h2 {
+    margin: 0px;
+
+    border-bottom: 1px solid $blue;
+    width: fit-content;
+  }
+  text-align: left;
+  height: auto;
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    list-style-type: None;
+    //list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+  }
+  .links li {
+    p {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
+
+@media (min-width: 475px) {
+  .footer {
+    padding: 0em 0em;
+    margin: 0em 0em;
+  }
+}
+@media (min-width: 640px) {
+  .footer {
+    margin: 0rem calc(1rem - 25px);
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    margin: 0rem calc(2rem - 25px);
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    margin: 0rem calc(4rem - 25px);
+  }
+}
+@media (min-width: 1280px) {
+  .footer {
+    margin: 0rem calc(8rem - 50px);
+  }
+}
+@media (min-width: 1536px) {
+  .footer {
+    margin: 0rem calc(16rem - 100px);
+  }
+}
+// TO-DO: Add reactive scaling to footer, especially with links and signup form input;
+// TO-DO: Delete svgs and all references to them, add hrefs to social links

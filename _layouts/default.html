@@ -93,28 +93,36 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          <div class="icons">{% include svg-icons.html %}</div>
-          <div>
-            <h2>JapanColorado</h2>
-            <p>&copy; 2023</p>
+          <div class="socials">
+            <h2>Socials:</h2>
+            <ul class="links">
+              <li><a>Github</a><p>Project source code</p></li>
+              <li><a>YouTube</a><p>Livestreams/videos</p></li>
+              <li><a>Beeminder</a><p>Accountability!</p></li>
+              <li><a>LinkedIn</a><p>Hire me?</p></li>
+            </ul>
           </div>
-
-          <form
-            method="post"
-            action="https://weightless.so/api/lists/s6ousm21/subscribe"
-            class="email-form"
-          >
-            <label for="email-address" class="sr-only">Email address</label>
-            <input
-              id="email-address"
-              name="subscription[email]"
-              type="email"
-              autocomplete="email"
-              placeholder="your@email.address"
-              required=""
-            />
-            <button type="submit" class="btn">Sign up</button>
-          </form>
+          <div class="signup">
+            <h3>Get notified of new releases!</h3>
+            <p>Occasional emails about new projects and posts.</p>
+            <form
+              method="post"
+              action="https://weightless.so/api/lists/s6ousm21/subscribe"
+              class="email-form"
+            >
+              <label for="email-address" class="sr-only">Email address</label>
+              <input
+                id="email-address"
+                name="subscription[email]"
+                type="email"
+                autocomplete="email"
+                placeholder="your@email.address"
+                required=""
+              />
+              <button type="submit" class="btn">Sign up</button>
+            </form>
+            <p><em>No spam.</em> Maybe ~1 email a month</p>
+          </div>
         </footer>
       </div>
     </div>
