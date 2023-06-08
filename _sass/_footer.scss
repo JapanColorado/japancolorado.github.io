@@ -18,6 +18,7 @@ footer {
 .email-form {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .signup {
   display: flex;
@@ -50,7 +51,6 @@ footer {
   border-width: 0;
 }
 #email-address {
-  margin-right: 10px;
   border-radius: 5px;
 }
 .socials {
@@ -58,30 +58,41 @@ footer {
   top: -10px;
   h2 {
     margin: 0px;
-
     border-bottom: 1px solid $blue;
     width: fit-content;
   }
   text-align: left;
   height: auto;
-  .links {
-    display: flex;
-    justify-content: space-between;
-    width: 650px;
-    list-style-type: None;
-    //list-style-position: inside;
-    margin: 0px;
-    padding: 0px;
-    padding-top: 10px;
-  }
-  .links li {
-    p {
-      margin: 0px;
-      padding: 0px;
-    }
-  }
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: None;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 5px;
 }
 
+.links li {
+  width: 180px;
+  p {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.socials h2 {
+  padding-top: 15px;
+}
+.links li:first-child,
+.links li:nth-child(2) {
+  border-bottom: 2px solid $mainBlue;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+}
+.signup-extra {
+  display: none;
+}
 @media (min-width: 475px) {
   .footer {
     padding: 0em 0em;
@@ -90,28 +101,80 @@ footer {
 }
 @media (min-width: 640px) {
   .footer {
-    margin: 0rem calc(1rem - 25px);
+    margin: 0rem calc(1rem - 100px);
   }
 }
 @media (min-width: 768px) {
   .footer {
-    margin: 0rem calc(2rem - 25px);
+    margin: 0rem calc(2rem - 40px);
+  }
+  .signup {
+    width: 250px;
+    margin-left: 10px;
+    padding: 5px;
+  }
+  #email-address {
+    width: 225px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+  .email-form button{
+    height: 32px;
+    padding-top: 4px;
+    margin-bottom: 5px;
   }
 }
 @media (min-width: 1024px) {
   .footer {
-    margin: 0rem calc(4rem - 25px);
+    margin: 0rem calc(4rem - 50px);
+  }
+  .links {
+    width: 400px;
+  }
+
+  .signup {
+    width: 375px;
+  }
+  .signup-extra {
+    display: inline;
+  }
+  #email-address {
+    margin-right: 10px;
+    width: 235px;
+    height: 39px;
+
+  }
+  .email-form button{
+    height:min-content;
+    padding-top: 8px;
   }
 }
 @media (min-width: 1280px) {
   .footer {
-    margin: 0rem calc(8rem - 50px);
+    margin: 0rem calc(8rem - 100px);
+  }
+  .socials h2 {
+    padding-top: 0px;
+  }
+  .links {
+    width: 650px;
+    padding-top: 10px;
+  }
+  .links li {
+    max-width: max-content;
+  }
+  .links li:first-child,
+  .links li:nth-child(2) {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 }
 @media (min-width: 1536px) {
   .footer {
-    margin: 0rem calc(16rem - 100px);
+    margin: 0rem calc(16rem - 150px);
   }
 }
 // TO-DO: Add reactive scaling to footer, especially with links and signup form input;
+// TO-DO: Finish reactive scaling, clean up css
 // TO-DO: Delete svgs and all references to them, add hrefs to social links
