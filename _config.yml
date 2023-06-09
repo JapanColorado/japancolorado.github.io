@@ -2,15 +2,10 @@ name: Russell White
 description: Avid learner and huge fan of questions
 avatar: https://avatars.githubusercontent.com/u/90987391?v=4
 
-footer-links:
-  github: japancolorado/
-  rss: YESPLEASE # just type anything here for a working RSS icon
-  youtube: "@japancolorado"
-
 disqus: japancolorado
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+# google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and RSS feed
