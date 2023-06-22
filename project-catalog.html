@@ -2,11 +2,11 @@
 layout: default
 ---
 
-{% for staff_member in site.staff_members %}
+{% for project in site.projects %}
   <h2>
-    <a href="{{ staff_member.url }}">
-      {{ staff_member.name }} - {{ staff_member.position }}
+    <a href="{{ project.url }}">
+      {{ project.name }} - {{ project.position }}
     </a>
   </h2>
-  <p>{{ staff_member.content | markdownify }}</p>
+  <p>{{ project.content | markdownify }}</p>
 {% endfor %}

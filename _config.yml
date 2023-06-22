@@ -51,6 +51,6 @@ exclude:
   - CNAME
 
 collections:
-  staff_members:
+  projects:
     people: true
     output: true
