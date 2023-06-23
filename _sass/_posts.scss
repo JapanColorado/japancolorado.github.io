@@ -96,24 +96,14 @@
 
 // Mobile-first design //
 @media (min-width: 475px) {
-  .post {
-    padding: 0em 0em;
-    margin: 0em 0em;
-  }
 }
 @media (min-width: 640px) {
-  .post {
-    margin: 0rem 1rem;
-  }
   // Add back subtitle
   .subtitle {
     display: inline-block;
   }
 }
 @media (min-width: 768px) {
-  .post {
-    margin: 0rem 2rem;
-  }
   // Add back centered image to blog post
   .entry {
     img ~ em,
@@ -154,9 +144,6 @@
   }
 }
 @media (min-width: 1024px) {
-  .post {
-    margin: 0rem 4rem;
-  }
   .entry {
     // Float blog image to the right on larger screens
     p:has(img ~ em) {
@@ -182,9 +169,6 @@
   }
 }
 @media (min-width: 1280px) {
-  .post {
-    margin: 0rem 6rem;
-  }
   .excerpt{
     font-size: 1.15em;
     p:first-of-type {
@@ -194,7 +178,4 @@
   }
 }
 @media (min-width: 1536px) {
-  .post {
-    margin: 0rem 10rem;
-  }
 }
