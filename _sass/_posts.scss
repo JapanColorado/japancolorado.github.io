@@ -176,18 +176,25 @@
     }
 
     p:first-of-type {
-      padding-top: 35px;
+      padding-top: 15px;
       padding-bottom: 0px;
     }
   }
 }
 @media (min-width: 1280px) {
   .post {
-    margin: 0rem 8rem;
+    margin: 0rem 6rem;
+  }
+  .excerpt{
+    font-size: 1.15em;
+    p:first-of-type {
+      max-width: 600px;
+      width: 100%;
+    }
   }
 }
 @media (min-width: 1536px) {
   .post {
-    margin: 0rem 16rem;
+    margin: 0rem 10rem;
   }
 }
