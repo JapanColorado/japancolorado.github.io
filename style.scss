@@ -47,10 +47,14 @@ img ~ em {
   text-align: center;
 }
 
-// Sections / Pages //
+// Sections //
 @import "header";
 @import "footer";
+
+// Pages //
 @import "posts";
+@import "projects";
+
 
 // Implements mobile-first design
 @media (min-width: 475px) {
