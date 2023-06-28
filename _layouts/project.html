@@ -5,11 +5,12 @@ layout: default
 <article class="project">
   <div class="project-header">
     <h1>{{ page.title }}</h1>
+    <div class="divider"></div>
     {% if page.finished == true %}
-    <h2 id="true">Finished</h2>
+    <h1 id="true">Finished</h1>
     {% endif %}
     {% if page.finished == false %}
-    <h2 id="false">In Progress</h2>
+    <h1 id="false">In Progress</h1>
     {% endif %}
   </div>
   <p>
