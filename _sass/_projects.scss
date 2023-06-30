@@ -27,6 +27,7 @@
 }
 .project-img {
   width: 100%;
+  height: auto;
   margin: 0 auto;
   text-align: center;
 }
@@ -46,8 +47,12 @@
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  hr{
-    margin-bottom: 15px;
+}
+
+// Project Catalog Page //
+.project-catalog {
+  .project-img {
+    max-width: 275px;
   }
 }
 p:has(.project-img) {

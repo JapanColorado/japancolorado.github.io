@@ -1,12 +1,25 @@
 ---
 layout: default
 ---
-
+<div class="project-catalog">
 {% for project in site.projects %}
-  <h2>
-    <a href="{{ project.url }}">
-      {{ project.name }} - {{ project.position }}
-    </a>
-  </h2>
-  <p>{{ project.content | markdownify }}</p>
+<a class="project-header" href="{{ site.baseurl }}{{ project.url }}">
+  <h1>{{ project.title }}</h1>
+  <div class="divider"></div>
+  {% if project.finished == true %}
+  <h1 id="true">Finished</h1>
+  {% endif %}
+  {% if project.finished == false %}
+  <h1 id="false">In Progress</h1>
+  {% endif %}
+</a>
+<p>
+  <img
+    src="../../images/{{ project.img_link }}"
+    alt="{{ project.title }}"
+    class="project-img"
+  />
+</p>
+<div class="project-details">{{ project.excerpt }}</div>
 {% endfor %}
+</div>

@@ -3,13 +3,15 @@ layout: project
 title: Macha Machine
 img_link: cat.jpg
 finished: true
+excerpt_separator: <div class="indicator"></div>
 ---
 ## Description
 A small little robot that mixes and brews macha lattes using raspberry pi, python, a small servo, etc.
-<hr>
 
 ## Inner Workings
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus viverra semper. Cras sapien tortor, placerat sit amet diam sed, consectetur ultrices nulla. Sed pretium tortor non bibendum rutrum. Ut iaculis enim sed ante vehicula blandit ac et lorem. Suspendisse non condimentum nibh, at aliquet odio. Morbi ut enim elementum, aliquet massa id, vulputate justo. Donec a accumsan mauris, in maximus dolor. Suspendisse quis nibh ipsum. Curabitur venenatis vel nunc sit amet cursus.
+
+<div class="indicator"></div>
 
 ## My Inspiration
 Nullam tristique a sapien eget accumsan. Donec tristique tellus leo. Maecenas cursus porta efficitur. Sed ornare pretium lectus. Sed at lectus est. Maecenas sed lacus non nibh ullamcorper egestas. Suspendisse nec accumsan mauris. Etiam in massa urna. Praesent leo urna, pulvinar ac velit non, maximus efficitur arcu. Aliquam quis erat molestie, viverra mi a, pharetra mi. Phasellus sit amet erat et nisi dictum laoreet. Vestibulum ac mauris sit amet libero imperdiet pulvinar. In hac habitasse platea dictumst.
