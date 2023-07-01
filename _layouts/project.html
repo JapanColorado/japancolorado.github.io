@@ -8,8 +8,7 @@ layout: default
     <div class="divider"></div>
     {% if page.finished == true %}
     <h1 id="true">Finished</h1>
-    {% endif %}
-    {% if page.finished == false %}
+    {% endif %} {% if page.finished == false %}
     <h1 id="false">In Progress</h1>
     {% endif %}
   </div>
@@ -22,5 +21,5 @@ layout: default
   </p>
   <div class="project-details">{{ content }}</div>
 </article>
-<!-- TO-DO: Style project template similar to blog excerpts, having img on left, title, description, reasoning, and links on the right/bottom. -->
-<!-- TO-DO: Add blog excerpt container around project template and project catalog -->
+<!-- TO-DO: Copy blog page's bottom border css -->
+<!-- TO-DO: Make blog page and posts full screen size -->

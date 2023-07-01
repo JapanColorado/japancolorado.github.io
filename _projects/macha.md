@@ -1,12 +1,12 @@
 ---
 layout: project
-title: Macha Machine
+title: Example Project
 img_link: cat.jpg
 finished: true
 excerpt_separator: <div class="indicator"></div>
 ---
 ## Description
-A small little robot that mixes and brews macha lattes using raspberry pi, python, a small servo, etc.
+One day, there will be lots of these projects, with interesting designs and purposes. But right now, there's only this test project to get the page design correct.
 
 ## Inner Workings
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus viverra semper. Cras sapien tortor, placerat sit amet diam sed, consectetur ultrices nulla. Sed pretium tortor non bibendum rutrum. Ut iaculis enim sed ante vehicula blandit ac et lorem. Suspendisse non condimentum nibh, at aliquet odio. Morbi ut enim elementum, aliquet massa id, vulputate justo. Donec a accumsan mauris, in maximus dolor. Suspendisse quis nibh ipsum. Curabitur venenatis vel nunc sit amet cursus.
