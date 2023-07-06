@@ -52,5 +52,4 @@ exclude:
 
 collections:
   projects:
-    people: true
     output: true
