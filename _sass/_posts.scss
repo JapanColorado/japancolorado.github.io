@@ -13,13 +13,13 @@
 
   font-size: 18px;
   font-style: italic;
-  color: rgb(218, 218, 218);
+  color: var(--textGray);
 
   padding-top: 0px;
   padding-bottom: 5px;
   margin: 0px;
 
-  border-bottom: solid 1px $lightGray;
+  border-bottom: solid 1px var(--textGray);
 }
 
 .post {
@@ -27,7 +27,7 @@
     margin: 1.8em 0.8em;
     border-left: 2px solid $lightGray;
     padding: 0.1em 1em;
-    color: $lightGray;
+    color: var(--textGray);
     font-size: 22px;
     font-style: italic;
   }

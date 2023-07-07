@@ -2,20 +2,35 @@
 // VARIABLES
 //
 
-// Colors
+// Theme-switching colors
+// Normal CSS variables because of theme switching
+
+:root {
+  --backgroundBlack: #181818;
+  --headerBlack: rgb(15, 15, 15);
+  --black: #000;
+  --selectionBlue: lightblue;
+  --textGray: lightgrey;
+  --white: #fff;
+  --titleWhite: rgb(240, 240, 240);
+}
+
+.light-mode {
+  --backgroundBlack: #f7f7f7;
+  --headerBlack: #e7e7e7;
+  --black: #fff;
+  --white: #000;
+  --textGray: #333;
+  --titleWhite: #222;
+  --selectionBlue: #eee;
+}
+
+// Unchanging Colors / Borders
 $blue: #00b0fb;
 $mainBlue: #117fad;
 $accentRed: #fa193e;
-
-// Grays
-$backgroundBlack: #181818;
-$headerBlack: rgb(15, 15, 15);
-$black: #000;
-$darkGray: #333;
 $gray: #666;
-$textGray: #bbb9b9;
 $lightGray: #eee;
-$white: #fff;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;

@@ -15,8 +15,8 @@ const mobileNav = () => {
     }
   });
 
-  const themeSwitcher = document.querySelector(".mobile-links .sun");
-  themeSwitcher.addEventListener("click", () => {
+  const mobileSun = document.querySelector(".mobile-links .sun");
+  mobileSun.addEventListener("click", () => {
     openMobileNav = false;
     mobileNav.style.display = "none";
     document.body.style.overflowY = "auto";

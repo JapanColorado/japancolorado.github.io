@@ -9,10 +9,10 @@ html {
 }
 
 body {
-  background: $backgroundBlack;
+  background: var(--backgroundBlack);
   font: 1em $helvetica;
   font-size: 20px;
-  color: lightgrey;
+  color: var(--textGray);
 }
 
 h1,
@@ -22,7 +22,7 @@ h4,
 h5,
 h6 {
   font-family: $helveticaNeue;
-  color: rgb(240, 240, 240);
+  color: var(--titleWhite);
   font-weight: bold;
 
   line-height: 1.7;
@@ -124,10 +124,10 @@ button {
 
 // Specify the color of selections
 ::-moz-selection {
-  color: $black;
-  background: lightblue;
+  color: black;
+  background: var(--selectionBlue);
 }
 ::selection {
-  color: $black;
-  background: lightblue;
+  color: black;
+  background: var(--selectionBlue);
 }

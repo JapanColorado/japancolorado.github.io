@@ -1,7 +1,7 @@
 // Used for full width background
 .header-wrapper {
   border-bottom: 1px solid $gray;
-  background-color: $headerBlack;
+  background-color: var(--headerBlack);
 }
 
 // site-header contains the site title and the navbar
@@ -57,7 +57,7 @@
   height: 32px;
 
   color: white;
-  background-color: $headerBlack;
+  background-color: var(--headerBlack);
 }
 
 @media (min-width: 475px) {
@@ -120,8 +120,8 @@
       width: 32px;
       height: 32px;
 
-      color: white;
-      background-color: $headerBlack;
+      color: var(--white);
+      background-color: var(--headerBlack);
     }
   }
 
@@ -131,7 +131,7 @@
     color: $accentRed;
   }
   .nav a:hover {
-    color: rgb(201, 201, 201);
+    color: var(--selectionBlue);
   }
   .nav a:active {
     filter: invert(70%);

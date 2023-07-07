@@ -5,7 +5,7 @@
   z-index: 999;
   width: 100%;
   height: 100%;
-  background-color: $headerBlack;
+  background-color: var(--headerBlack);
   display: none;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@
     height: 42px;
 
     color: white;
-    background-color: $headerBlack;
+    background-color: var(--headerBlack);
   }
 }
 .mobile-divider {
@@ -46,7 +46,7 @@
   color: $accentRed;
 }
 .mobile-links a:hover {
-  color: rgb(201, 201, 201);
+  color: var(--selectionBlue);
 }
 .mobile-links a:active {
   filter: invert(70%);

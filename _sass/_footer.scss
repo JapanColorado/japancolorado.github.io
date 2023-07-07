@@ -2,7 +2,7 @@
   height: fit-content;
   margin-top: 50px;
   border-top: 1px solid $gray;
-  background-color: $headerBlack;
+  background-color: var(--headerBlack);
 }
 footer {
   display: flex;
