@@ -16,13 +16,17 @@
 }
 
 .light-mode {
-  --backgroundBlack: #f7f7f7;
-  --headerBlack: #e7e7e7;
+  --backgroundBlack: rgb(249, 251, 253);
+  --headerBlack: rgb(249, 251, 253);
   --black: #fff;
   --white: #000;
   --textGray: #333;
   --titleWhite: #222;
   --selectionBlue: #eee;
+  .rss,
+  .mobile-links .rss {
+    filter: invert(0%);
+  }
 }
 
 // Unchanging Colors / Borders

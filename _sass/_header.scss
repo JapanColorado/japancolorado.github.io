@@ -56,8 +56,13 @@
   width: 32px;
   height: 32px;
 
-  color: white;
+  color: var(--white);
   background-color: var(--headerBlack);
+}
+
+// RSS icon(put here to make themes work)
+.rss {
+  filter: invert(100%);
 }
 
 @media (min-width: 475px) {
@@ -109,10 +114,7 @@
 
     list-style: none;
 
-    // RSS and sun icons
-    .rss {
-      filter: invert(100%);
-    }
+    // Sun icon
     .sun {
       position: relative;
       top: 2px;

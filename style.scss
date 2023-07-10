@@ -21,7 +21,7 @@
   font-weight: 600;
   text-decoration: none;
   background-color: $mainBlue;
-  color: $lightGray;
+  color: #fff;
   padding: 0.5rem 0.5rem;
   border-radius: 6px;
   box-shadow: 0px 0px 8px rgba(17, 127, 173, 0.25),
@@ -89,4 +89,3 @@ img ~ em {
 
 // Bloating imports at bottom
 @import "highlights";
-@import "svg-icons";
