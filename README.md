@@ -9,7 +9,7 @@ Hi! I'm Russell, also known as _JapanColorado_. I am an aspiring AI researcher, 
 
 ## My background
 
-I've _always_ been interested in coding. Since the first time I learned block coding, to the first-ever Arduino kit I received from an aunt I still don't know the name or face of, I was enthralled with programming. I taught myself python from a young age, and built stuff with a Raspberry Pi since I was in elementary school.
+I've _always_ been interested in coding. Since the first time I learned block coding, to the first-ever Arduino kit I received from an aunt, I have become more and more enthralled with programming. I taught myself python from a young age, and built stuff with a Raspberry Pi since elementary school.
 
 ### The issue:
 
@@ -25,7 +25,7 @@ I now see how foolish I was to abandon the project in the first place, and to re
 
 ## And so, a blog was born
 
-Yes, the one you're currently reading. I will be consistently writing about the new things I'm learning, the fun projects I'm working on, and the inevitable struggles that will come up so that you don't have to repeat my mistakes. I want to
+Yes, the one you're currently reading. I will be consistently writing about the new things I'm learning, the fun projects I'm working on, and the inevitable struggles that will come up so that you don't have to repeat my mistakes.
 
 In addition, I will be streaming my coding sessions every other day on my [YouTube channel](https://www.youtube.com/@japancolorado), and I would appreciate any feedback! I would like to become a better developer while helping others who may feel as lost as I'm feeling now. I want them to know it's going to take a lot of _sucking_ before finally getting better. And I want to go through all the sucking so that I **_finally_** get better.
 

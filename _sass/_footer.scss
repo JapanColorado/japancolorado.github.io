@@ -1,0 +1,191 @@
+.wrapper-footer {
+  height: fit-content;
+  margin-top: 50px;
+  border-top: 1px solid $gray;
+  background-color: var(--headerBlack);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  // Display signup below socials on small screens
+  flex-direction: column;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 10px 0px;
+  margin-left: 10px;
+  padding: 5px;
+
+  background-color: rgba(250, 25, 62, 0.1);
+  border: 2px solid $accentRed;
+  border-radius: 10px;
+  h3 {
+    margin: 0px;
+    border-bottom: 1px solid $mainBlue;
+  }
+  p {
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+  }
+}
+.email-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+// Hides label that is used for screen readers
+[for="email-address"] {
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border-width: 0;
+}
+#email-address {
+  width: 225px;
+  height: 32px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.email-form button {
+  height: 32px;
+  padding-top: 4px;
+  margin-bottom: 5px;
+}
+
+.socials {
+  height: auto;
+  text-align: left;
+  position: relative;
+  top: -10px;
+
+  h2 {
+    width: fit-content;
+    margin: 0px;
+    padding-top: 15px;
+    border-bottom: 1px solid $blue;
+  }
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 5px;
+}
+.links li {
+  // Padding between items on very small screens
+  padding: 0px 5px;
+  p {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+// Hides extra text on small screens
+.signup-extra,
+.links-extra {
+  display: none;
+}
+
+@media (min-width: 475px) {
+  .footer {
+    padding: 0em 0em;
+    margin: 0em 0em;
+    flex-direction: row;
+  }
+  .links li {
+    padding: 0px 0px;
+  }
+}
+@media (min-width: 640px) {
+  .links li {
+    width: 180px;
+  }
+  .links {
+    width: 180px;
+  }
+  .signup {
+    width: 340px;
+  }
+  #email-address {
+    margin-right: 2px;
+  }
+}
+@media (min-width: 768px) {
+  .signup {
+    width: 225px;
+    margin-left: 10px;
+    padding: 5px;
+  }
+  #email-address {
+    width: 220px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+  .links-extra {
+    display: block;
+  }
+  // Adds border to separate links when arranged in a grid
+  .links li:first-child,
+  .links li:nth-child(2) {
+    border-bottom: 2px solid $mainBlue;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+  }
+  .links {
+    width: fit-content;
+  }
+}
+@media (min-width: 1024px) {
+  .links {
+    width: 400px;
+  }
+  .signup {
+    width: 375px;
+  }
+  .signup-extra {
+    display: inline;
+  }
+  #email-address {
+    width: 235px;
+    height: 39px;
+    margin-right: 10px;
+  }
+  .email-form button {
+    height: min-content;
+    padding-top: 8px;
+  }
+}
+@media (min-width: 1280px) {
+  .socials {
+    h2 {
+      padding-top: 0px;
+    }
+  }
+  .links {
+    width: 650px;
+    padding-top: 10px;
+  }
+  .links li {
+    max-width: max-content;
+  }
+  .links li:first-child,
+  .links li:nth-child(2) {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+}

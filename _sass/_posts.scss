@@ -1,0 +1,184 @@
+// Utility Classes and Styling for Posts //
+.date {
+  font-style: italic;
+  color: $gray;
+}
+
+.subtitle {
+  // Hide subtitle on small screens
+  display: none;
+  overflow: hidden;
+
+  width: fit-content;
+
+  font-size: 18px;
+  font-style: italic;
+  color: var(--textGray);
+
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin: 0px;
+
+  border-bottom: solid 1px var(--textGray);
+}
+
+.post {
+  blockquote {
+    margin: 1.8em 0.8em;
+    border-left: 2px solid $lightGray;
+    padding: 0.1em 1em;
+    color: var(--textGray);
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    font-size: 18px;
+  }
+  h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .entry {
+    img {
+      width: 475px;
+      border-radius: 20px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// Styling for Blog Page //
+
+// Adds border to separate each entry
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $accentRed;
+}
+
+// Removes border from last entry
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+// Adds padding to sides without messing with separator
+.preview-container {
+  padding: 0px 10px;
+  h1 {
+    width: fit-content;
+    border-bottom: solid 1px $lightGray;
+  }
+}
+
+.excerpt {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  // Auto-scaling height for small screens
+  height: fit-content;
+
+  // Hide excerpt image for small screens
+  p:has(img ~ em) {
+    display: none;
+    align-self: center;
+  }
+
+  p:first-of-type {
+    width: 100%;
+    padding: 0px;
+    margin: 5px 0px;
+    margin-bottom: 10px;
+  }
+}
+
+// Mobile-first design //
+@media (min-width: 475px) {
+}
+@media (min-width: 640px) {
+  .preview-container {
+    h1 {
+      border-bottom: none;
+    }
+  }
+  .subtitle {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  // Center post image for medium screens
+  .entry {
+    img ~ em,
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .excerpt {
+    height: 250px;
+    // Add back image to blog page
+    p:has(img ~ em) {
+      display: block;
+      font-size: 16px;
+    }
+    img {
+      max-width: 250px;
+      border-radius: 20px;
+      margin-bottom: 2px;
+    }
+
+    // Makes space for image
+    p:first-of-type {
+      max-width: 550px;
+      margin-right: 10px;
+    }
+  }
+  .post {
+    .read-more {
+      font-size: 24px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .entry {
+    // Float blog image to the right on larger screens
+    p:has(img ~ em) {
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 0px;
+    }
+  }
+  // Make image larger and excerpt height smaller
+  .excerpt {
+    height: 180px;
+    img {
+      max-width: 325px;
+    }
+  }
+  // Add more padding to bottom of excerpts
+  .posts > .post {
+    padding-bottom: 3.5em;
+  }
+}
+@media (min-width: 1280px) {
+  .excerpt {
+    font-size: 26px;
+    p:first-of-type {
+      max-width: 1050px;
+    }
+  }
+}
+@media (min-width: 1536px) {
+  .excerpt {
+    height: 150px;
+  }
+  .posts > .post {
+    padding-bottom: 4em;
+    padding-top: 15px;
+  }
+}

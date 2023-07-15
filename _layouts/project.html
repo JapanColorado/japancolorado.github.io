@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="project">
+  <div class="project-header">
+    <h1>{{ page.title }}</h1>
+    <div class="divider"></div>
+    {% if page.finished == true %}
+    <h1 id="true">Finished</h1>
+    {% endif %} {% if page.finished == false %}
+    <h1 id="false">In Progress</h1>
+    {% endif %}
+  </div>
+  <p>
+    <img
+      src="../../images/{{ page.img_link }}"
+      alt="{{ page.title }}"
+      class="project-img"
+    />
+  </p>
+  <div class="project-details">{{ content }}</div>
+</article>
