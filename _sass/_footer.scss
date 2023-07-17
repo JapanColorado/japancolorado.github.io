@@ -189,3 +189,8 @@ footer {
     padding-bottom: 0px;
   }
 }
+@media (min-width: 1536px) {
+  div:has(.index-page) ~ .wrapper-footer{
+    margin-top: 110px;
+  }
+}
