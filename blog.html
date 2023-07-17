@@ -12,7 +12,7 @@ title: Blog
       </h1>
       <h3 class="subtitle">{{ post.subtitle }}</h3>
       
-      <div class="excerpt">{{ post.excerpt }}</div>
+      <div class="excerpt">{{ post.excerpt | markdownify}}</div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
         Keep reading...
